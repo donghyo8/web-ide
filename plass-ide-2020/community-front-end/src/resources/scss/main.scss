@@ -1,0 +1,25 @@
+@import './Abstracts/variables';
+
+@import './Base/utilities';
+@import './Base/base';
+@import './Base/typhography';
+@import './Base/animations';
+
+@import './Pages/main';
+@import './Pages/listproblem';
+@import './Pages/projectManage';
+@import './Layout/header';
+@import './Layout/profile';
+@import './Pages/home';
+@import './Layout/nav';
+@import './Layout/footer';
+
+@import './Layout/classInfo';
+@import './Pages/class';
+@import './Components/submission';
+@import './Components/select';
+@import './Components/seachBox';
+@import './Components/button';
+@import './Components/table';
+@import './Components/alert';
+@import './Components/formwriteclass';

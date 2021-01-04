@@ -1,0 +1,78 @@
+.form_write{
+    border: 1px solid black;
+    padding-bottom: 1rem;
+    legend{
+        background-color: rgba($color-dark,  .5);
+        padding: 5px ;
+    }
+    .form_title,.form_content,.form_file{
+        padding: 0.5rem;
+        input{
+            width: 50%;
+            border: none;
+            border-bottom: 1px solid $color-dark;
+            outline: none;
+            padding: 0.5rem;
+        }
+        .file_update{
+            border: none;
+        }
+    }
+    .form_listfiles{
+        border: 1px solid #ccc;
+        button{
+            font-size: 12px;
+            padding: 6px;
+        }
+        .title{
+            strong{
+                margin-left: 10px;
+            }
+            padding: 5px 5px;
+            background-color: #ccc;
+        }
+        .update_listfiles{
+            overflow-x: auto;
+            height: 150px;
+            li{
+                border-bottom: 1px solid #ccc;
+            }
+        }
+    }
+    .form_file{
+        border-top: 2px solid #ccc;
+    }
+}
+.deletefile{
+    width: 24px;
+    font-size: 15px;
+    cursor: pointer;
+    &:hover{
+        color: #ccc;
+    }
+}
+.form_itemview{
+    border: 1px solid black;
+    border-top:10px solid rgba($color-dark,  0.6);
+    .tasks{
+        float: right;
+        position: relative;
+        right: 4px;
+        button{
+            background-color: white;
+            padding: 2px;
+            cursor: pointer;
+            margin-top: 3px;
+            border: none;
+            height: 20px;
+        }
+    }
+    &-content{
+        border-top: 1px solid $color-dark;
+        padding: 15px 5px 15px 5px;
+        border-bottom: 1px solid $color-dark;
+    }
+    &-information, &-file{
+        padding: 0.5rem;
+    }
+}

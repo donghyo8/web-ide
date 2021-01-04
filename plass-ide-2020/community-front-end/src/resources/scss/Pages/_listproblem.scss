@@ -1,0 +1,121 @@
+.problem{
+    height: auto;
+    margin-top: 5rem;
+    a{
+        color: black;
+    }
+    .list_problem{
+        height: 77vh;
+    }
+    .problem_detail{
+        margin-bottom: 5vh;
+        height: 100%;
+        margin-bottom: 10rem;
+        .problem_name{
+            a{
+                position: relative;
+                top: -9px;
+                font-size: 1.5rem;
+                color: white;
+                background-color: $color-dark;
+            }
+            span{
+                display: inline;
+                margin-right: 10px;
+                font-size: 3rem;
+            }
+        }
+        .problem_content{
+            h3{
+                font-size: 2.5rem;
+                border-bottom: 1px solid #ccc;
+                display: inline-block;
+                &::before{
+                    content:' \25E3';  /*' \25E5'*/
+                }
+            }
+            p{
+                padding: 1rem;
+                transition: all 200ms;
+            }
+            textarea{
+                margin-top: 1.5rem;
+                opacity: 1;
+                width: 95%;
+            }
+        }
+        .project-editor{
+            display: block;
+            z-index: 1;
+            select{
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+                padding: 0.4rem;
+                outline: none;
+                z-index: 9;
+            }
+            .console {
+                box-sizing: border-box;
+                border-top: 1px solid #606060;
+                border-left: 1px solid #606060;
+                background: #505050;
+                > ul {
+                color: #dadada;
+                    li {
+                    cursor: pointer;
+                    padding: 5px;
+                    display: inline-block;
+                    width: 80px;
+                    text-align: center;
+                    border-right: 1px solid #606060;
+                    &.active {
+                        background: #404040;
+                    }
+                    }
+                }
+                > textarea {
+                    width: 100%;
+                    box-sizing: border-box;
+                    border: 0;
+                    background: #404040;
+                    color: white;
+                    resize: none;
+                    outline: none;
+                }
+            }
+        }
+        .example_text{
+            resize: none;
+            width: 100%;
+            padding: 1rem;
+        }
+        .console {
+            box-sizing: border-box;
+            border-top: 1px solid #606060;
+            border-left: 1px solid #606060;
+            background: #505050;
+            > ul {
+                color: #dadada;
+                li {
+                cursor: pointer;
+                padding: 5px;
+                display: inline-block;
+                width: 80px;
+                text-align: center;
+                border-right: 1px solid #606060;
+                &.active {
+                    background: #404040;
+                }
+                }
+            }
+            > textarea {
+            resize: none;
+            width: 100%;
+            box-sizing: border-box;
+            border: 0;
+            background: #404040;
+            color: white;
+        }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.Sandbox-NAVIGATION {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    bottom: 22px;
+    left: 0px;
+    height: 100%;
+    color: rgb(153, 153, 153);
+    font-size: 1.4rem;
+    background-color: rgb(80, 80, 80);
+    padding: 8px;
+    //border-right: 1px solid rgb(36, 36, 36);
+    // p:hover{
+    //     // background-color: red;
+    //     color: white;
+    // }
+    i{
+        cursor: pointer;
+        font-size: 35px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        color: black;
+        &:hover{
+            color: white;
+        }
+        //안됨
+        &.active{
+            color: white;
+            border-left-width: 1px white;
+        }
+    }
+    img {
+        cursor: pointer;
+
+        width: 30px;
+        height:30px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}
+

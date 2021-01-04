@@ -1,0 +1,28 @@
+
+.tutorial-left{
+    position: absolute;
+    left: 0rem;
+    background: #f1f1f1;
+    width: 13%;
+    height: 75%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    ul{
+        list-style: none;
+    }
+    ul > li:not(:first-child){
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        cursor: pointer;
+        letter-spacing: 0.1rem; 
+        &:hover{
+            color: #000000;
+            background-color: #cccccc;
+        }
+    }
+    ul > li:first-child{
+        background-color: #cccccc;
+        font-size: 3rem;
+        padding-left: 1rem;
+    }
+}

@@ -1,0 +1,40 @@
+.btn{
+    font-family: sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-size: 1.4rem;
+    border: none;
+    &:hover{
+        transform: translateY(-3px);
+    }
+    &:focus{
+        outline: none;
+    }
+}
+/* Button color and styles*/
+.btn--primary{
+    background-color: var(--primary);
+    color: var(--white);
+}
+.btn--warning{
+    background-color: var(--warning);
+    color: var(--white);
+}
+.btn--danger{
+    background-color: var(--danger);
+    color: var(--white);
+}
+.btn--success{
+    background-color: var(--success);
+    color: var(--white);
+}
+.medium{
+    padding: 0.5rem 2rem;
+    font-size: 2.5rem;
+}
+
+.small{
+    padding: 0.5rem 2rem;
+    font-size: 2rem;
+}

@@ -1,0 +1,95 @@
+[설치 프로그램 version]
+Nodejs : 12.x or latest
+Docker: latest
+Mysql: latest
+
+[기본 프로그램 설치]
+sudo su
+apt-get update
+apt-get install openssh-server
+apt-get install ssh
+apt-get install fish
+apt-get install curl
+
+git clone http://github.com/lynever/plass-ide-2020 (미리 clone 했을 시 생략가능)
+
+[Nodejs 설치]
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash --
+apt-get install -y nodejs
+nodejs -v
+
+[Docker 설치]
+apt install –y docker.io
+docker -v
+
+[Mysql 설치 및 DB bind adress 변경]
+apt-get install mysql-server
+mysql -u root -p
+CREATE database ide;
+use ide;
+show tables;
+mysql -u root -p ide < scheme.sql
+netstat -nptl(ip/port 확인)
+apt-get install vim
+vim /etc/mysql/mysql.conf.d/mysqld.cnf  ------> bind-adress 0.0.0.0 수정
+/etc/init.d/mysql restart
+
+[외부 접근이 안될 경우]
+iptables -I INPUT 1 -p tcp --dport 3306 -j ACCEPT
+iptables -I INPUT 1 -p tcp --dport 3000 -j ACCEPT
+iptables -I INPUT 1 -p tcp --dport 3001 -j ACCEPT
+iptables -I INPUT 1 -p tcp --dport 3002 -j ACCEPT
+iptables -I INPUT 1 -p tcp --dport 3003 -j ACCEPT
+iptables -I INPUT 1 -p tcp --dport 3004 -j ACCEPT
+mysql shell: grant all privileges on *.*  to 'root'@'%' identified by 'root의 패스워드'
+
+[각 디렉토리 마다 패키지 설치]
+npm install --unsafe-perm
+npm install nodemon -g
+
+[포트 연동 및 .env 설정]
+backend: 3000
+admin-front-end: 3001
+community-front-end: 3002
+ide-front-end: 3003
+ide-server: 3004
+ 
+- backend(.env)
+MYSQL_HOST=localhost
+MYSQL_PORT=3306
+MYSQL_ID=본인 DB id
+MYSQL_PASS=본인 DB password
+MYSQL_DB=ide
+PORT=3000
+ROOT_PATH=DEBUG_FILES
+TRASH_PATH=TRASH_FILESsp
+TOKEN_SECRET=plasslab_donghyo_Test_ide
+
+- admin-front-end(.env)
+REACT_APP_API_URL=http://본인 IP:3000
+
+- community-front-end(.env)
+REACT_APP_API_URL=http://본인 IP:3000
+REACT_APP_FRONT_IDE_URL=http://본인 IP:3003
+REACT_APP_API_IDE_URL=http://본인 IP:3004
+
+- ide-front-end(.env.development)
+REACT_APP_API_SERVER=http://본인 IP:3004
+REACT_APP_IDE_ADDR=http://본인 IP:3000
+
+- ide-server(.env)
+MYSQL_HOST=localhost
+MYSQL_PORT=3306
+MYSQL_ID=본인 DB id
+MYSQL_PASS=본인 DB password
+MYSQL_DB=ide
+PORT=3000
+ROOT_PATH=DEBUG_FILES
+TRASH_PATH=TRASH_FILESsp
+
+[Docker 이미지 생성]
+1. ide-server 디렉토리로 이동
+2. docker 디렉토리로 이동(chmod 744 build.sh)
+3. c/cpp, java 디렉토리 내 모든 run.sh 파일 권한 수정(chmod 744 run.sh)
+4. ./build.sh 실행
+5. docker images (이미지가 제대로 생성됬는지 확인)

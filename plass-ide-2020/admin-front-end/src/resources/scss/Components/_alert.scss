@@ -1,0 +1,28 @@
+.alert{
+    background-color: #8d857f;
+    outline: none;
+    position: absolute;
+    top: 30rem;
+    width: 15%;
+    justify-content: center;
+    margin: auto;
+    left: 50%;
+    transform:translate(-50%, -50%); 
+    font-size: 2rem;
+    padding: 1.5rem;
+    .model-header{
+      text-align: center;
+      color: white;
+      margin-bottom: 2rem;
+    }
+    .model-footer{
+      float: right;
+      button{
+        margin-left: 1rem;
+      }
+      button:hover{ 
+        background-color: white;
+        color: $color-dark !important;
+      }
+    }
+}

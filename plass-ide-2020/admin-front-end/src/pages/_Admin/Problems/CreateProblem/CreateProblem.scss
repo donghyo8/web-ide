@@ -1,0 +1,113 @@
+@import './../../../../App.scss';
+.create_problem{
+    input {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid black;
+        margin-left: 1rem;
+        border-radius: 2px 2px;
+        width: 40%;
+    }
+    textarea {
+        width: 95%;
+        resize: vertical;
+        outline: none;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+}
+.problem_detail{
+    height: 100%;
+    .problem_name{
+        a{
+            position: relative;
+            top: -9px;
+            font-size: 1.5rem;
+            color: white;
+            background-color: $color-dark;
+        }
+        span{
+            display: inline;
+            margin-right: 10px;
+            font-size: 3rem;
+        }
+    }
+    .problem_content{
+        textarea:not(.u-mr-top-small) {
+            width: 100%;
+        }
+        h3{
+            font-size: 2.5rem;
+            cursor: pointer;
+            border-bottom: 1px solid #ccc;
+            display: inline-block;
+            &::before{
+                content:' \25E3';  /*' \25E5'*/
+            }
+        }
+        p{
+            padding: 1rem;
+            transition: all 200ms;
+        }
+        textarea{
+            margin-top: 1.5rem;
+            width: 95%;
+        }
+        .level {
+            &_select{
+                padding: 0.5rem;
+                margin-left: 1rem;
+            }
+        }
+        .category{
+            margin-left: 4rem;
+            &_select{
+                padding: 0.5rem;
+                margin-left: 1rem;
+            }
+        }
+        .problem_category{
+            select{
+                padding: 0.5rem;
+                border: none;
+            }
+        }
+    }
+    .project-editor{
+        select{
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            padding: 0.4rem;
+            outline: none;
+        }
+        .console {
+            box-sizing: border-box;
+            border-top: 1px solid #606060;
+            border-left: 1px solid #606060;
+            background: #505050;
+            > ul {
+            color: #dadada;
+                li {
+                cursor: pointer;
+                padding: 5px;
+                display: inline-block;
+                width: 80px;
+                text-align: center;
+                border-right: 1px solid #606060;
+                &.active {
+                    background: #404040;
+                }
+                }
+            }
+            > textarea {
+                width: 100%;
+                box-sizing: border-box;
+                border: 0;
+                background: #404040;
+                color: white;
+                resize: none;
+                outline: none;
+            }
+        }
+    }
+}

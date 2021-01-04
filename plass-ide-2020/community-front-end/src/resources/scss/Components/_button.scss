@@ -1,0 +1,87 @@
+.btn{
+    /*
+    Default : btn
+    */
+    cursor: pointer;
+    &:hover{
+        transform: translateY(-.3rem);
+        box-shadow: 0 .5rem 2rem rgba(black, 0.8);
+    }
+    &:active{
+        outline: none;
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 2rem rgba(black, 0.2);
+    }
+    // &:link,
+    // &:visited {
+    //     text-transform: uppercase;
+    //     text-decoration: none;
+    //     padding: 1rem 4rem;
+    //     display: inline-block;
+    //     font-size: 1.6rem;
+    //     position: relative;
+    //     transition: all .2s;  
+    // }
+    
+    &_primary{
+        background-color: $color-dark;
+        color: white !important;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+    /* &_contribution{
+        font-size: 2rem !important;
+        margin-top: 10px;
+        background-color: black;
+        &:hover{
+            color: black;
+            background-color: white;
+        }
+        &:active{
+            outline: none;
+            transform: translateY(-.1rem);
+        }
+    } */
+    &_write{
+        float: right;
+        background-color: $color-dark;
+        color: white !important;
+        padding: 1.2rem 2rem; 
+    }
+    &_classtask{
+        border: none;
+        font-size: 1.8rem;
+        background-color:$color-brown;
+        padding: 0.8rem 2rem;
+        color: white !important;
+        &:hover{
+            color: white;
+            background-color: $color-dark;
+        }
+        &:active{
+            outline: none;
+            transform: translateY(-.1rem);
+        }
+    }
+    &_permission, &_refuse{
+        font-size: 1.5rem;
+        background-color: $color-dark;
+        padding: 0.8rem 2rem;
+        color: white !important;
+        border: none;
+        cursor: pointer;
+    }
+    &_refuse{
+        background-color: $color-orange;
+    }
+    &_file{
+        border: none;
+        background-color: white;
+        margin-left: 2px;
+        cursor: pointer;
+    }
+    
+}

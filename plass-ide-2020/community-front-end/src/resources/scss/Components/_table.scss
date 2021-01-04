@@ -1,0 +1,10 @@
+.table{
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    &-contribution th {
+        color: black;
+        background:#ccc;
+    }
+} 

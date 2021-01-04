@@ -1,0 +1,63 @@
+body{
+    font-family: 'Noto', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: black;
+}
+/*
+Text for index page
+*/
+.main_bottom-left{
+    padding: 100px;
+    font-weight: bold; 
+    animation: moveInLeft 1s ease-out;
+    animation-iteration-count: 1;
+    .logo_text{
+        font-size: 6rem;
+        margin-bottom: 10px;
+        .logo{
+            width: 20rem;
+            height: 20rem;
+        }
+    }
+    h2{
+        font-size: 3.5rem;
+        font-weight: 1000;
+        letter-spacing: 2px;
+    }
+}
+.text{
+    color: black;
+    margin-bottom: 5rem;
+    /*
+    ==Text headding for home
+    아이/비밀번호 찾기
+    */
+    &_primary{
+        color: blue;
+        &:hover{
+            text-decoration: underline;
+        }
+        &:hover:not(span){
+        text-decoration: underline;
+        }
+    }   
+    /*
+    ==Text headding for home
+    학기 정보
+    */
+    &_headding{
+        font-weight: normal;
+        font-size: 2rem;
+        letter-spacing: .5;
+        margin-bottom: 2px;
+        &::after{
+            content: " ";
+            width: 24.3rem;
+            height: 5px;
+            background-color: $color-brown;
+            display: block;
+        }
+    }
+}

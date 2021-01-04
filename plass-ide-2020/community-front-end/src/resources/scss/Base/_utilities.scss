@@ -1,0 +1,82 @@
+.all-no{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.ul-nolist-inline{
+    list-style: none;
+}
+/*============== Padding===============*/
+.padding-5{
+    padding: 0.5rem;
+}
+/*============== Border  & Outline : none===============*/
+.u-border-null{
+    border: none !important;
+}
+.border-1{
+    border: 1px solid black;
+}
+.border-btm{
+    border-bottom: 1px solid black
+}
+.u-outline-null{
+    outline: none !important;
+}
+/*============== Margin ===============*/
+.u-mr-top-small{
+    margin-top: 1rem;
+}
+.u-mr-top-big{
+    margin-top: 6rem;
+}
+.u-mr-bottom-small{
+    margin-bottom: 1rem;
+}
+.u-mr-bottom-big{
+    margin-bottom: 6rem;
+}
+/*============== Text ===============*/
+.u-text-center{
+    text-align: center;
+}
+.u-text-left{
+    text-align: left;
+}
+.u-text-right{
+    text-align: right;
+}
+/*============== Float ===============*/
+.u-float-right{
+    float: right;
+}
+.u-float-left{
+    float: left;
+}
+
+.nav-selected{
+    background-color: $color-brown;
+    color: white !important;
+}
+.select-home{
+    background-color: $color-brown;
+    a{
+        color: white !important;
+    }
+}
+.nav-selected-body{
+    background-color: $color-orange;
+    color: white !important;
+}                 
+.nav-selected-class{
+    background-color: $color-dark;
+ }
+.border-bottom{
+    width: 50%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.icon{
+    position: relative;
+    top: 1px;
+}

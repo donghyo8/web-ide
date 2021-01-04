@@ -1,0 +1,139 @@
+.IDE {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  $headerHeight: 30px;
+  $footerHeight: 25px;
+
+  header {
+    height: $headerHeight;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: #333638;
+    color: white;
+    position: relative;
+    ul.menu-items {
+      > li {
+        &:last-child {
+          border: 0;
+        }
+        font-size: 16px;
+        line-height: 18px;
+        display: inline-block;
+        cursor: pointer;
+        width: 85px;
+        text-align: center;
+        //border-right: 1px solid #a0a0a0;
+        position: relative;
+        ul.sub-items {
+          z-index: 1000;
+          display: none;
+          &.on {
+            display: block;
+          }
+          box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+          width: 150px;
+          background: #808080;
+          border: 1px solid #a0a0a0;
+          position: absolute;
+          top: 100%;
+          left: 15px;
+          box-sizing: border-box;
+          text-align: left;
+          > li {
+            cursor: pointer;
+            padding: 3px 10px;
+            border-bottom: 1px solid #a0a0a0;
+            &:hover {
+              background: #404040;
+            }
+            &:active {
+              background-color: #303030;
+            }
+            &:last-child {
+              border-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    p.title {
+      display: inline-block;
+      position: absolute;
+      left: 0; right: 0;
+      top: 0; bottom: 0;
+      margin: auto;
+      width: 150px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 20px;
+      height: 18px;
+    }
+  }
+  article {
+    display: flex;
+    height: calc(100% - #{$headerHeight + $footerHeight});
+    section {
+      display: flex;
+      flex-direction: column;
+      width: 100%; height: 100%;
+      overflow:hidden;
+      .workspace-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%; height: 100%;
+        overflow:hidden;
+        > .tab {
+          height: 30px;
+        }
+        > .editor {
+          height: calc(100% - 30px);
+        }
+        > #UNIQUE_ID_OF_DIV {
+          height: 100%;
+        }
+      }
+      > .console {
+        box-sizing: border-box;
+        //border-top: 1px solid #606060;
+        //border-left: 1px solid #606060;
+        background: #333638;
+        > ul {
+          color: #dadada;
+          li {
+            cursor: pointer;
+            padding: 5px;
+            display: inline-block;
+            width: 80px;
+            text-align: center;
+            //border-right: 1px solid #606060;
+            &.active {
+              font-size: 18px;
+              font-weight: bold;
+              //background: #404040;
+            }
+          }
+        }
+        > textarea {
+          width: 100%;
+          box-sizing: border-box;
+          border: 0;
+          background: #151515;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  footer {
+    background: #002080;
+    color: white;
+    height: $footerHeight;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+  }
+}

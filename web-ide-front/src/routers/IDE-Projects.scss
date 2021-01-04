@@ -1,0 +1,68 @@
+.IDE-Project {
+    width: 100%;
+    min-height: 100%;
+    background: #303030;
+    color: white;
+    .container {
+        max-width: 1500px;
+        margin: auto;
+        padding: 25px 0 50px;
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            padding: 15px 0;
+        }
+        table {
+            margin-top: 30px;
+            width: 100%;
+            table-layout: auto;
+
+            td, th{
+                vertical-align: middle;
+                &.center {
+                    text-align: center;
+                }
+            }
+
+            tbody {
+                tr {
+                    &:nth-child(even) {
+                        background: #454550;
+                    }
+                    &:nth-child(odd) {
+                        background: #353540;
+                    }
+                    &:hover {
+                        background: rgba(69, 69, 80, 0.8);
+                    }
+                    &:active {
+                        background: rgba(69, 69, 80, 0.3);
+                    }
+                }
+            }
+            tr {
+                cursor: pointer;
+                border-bottom: 1px solid #d0d0d0;
+                td {
+                    height: 50px;
+                    font-weight: 300;
+                }
+            }
+            .hamberger {
+                display: flex;
+                height: 20px;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+                padding-right: 20px;
+                box-sizing: border-box;
+                span {
+                    display: inline-block;
+                    width: 5px; height: 5px; border-radius: 50%;
+                    justify-content: space-between;
+                    background: white;
+                }
+            }
+        }
+    }
+}

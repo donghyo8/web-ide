@@ -1,0 +1,12 @@
+.submission{
+    width: 100%;
+    display: block;
+    content:  " ";
+    color: whitesmoke;
+    padding: 10px;
+    background-color: rgba($color-dark, 0.9);
+}
+.not_submission{
+    @extend .submission;
+    background-color: rgba($color-orange, 0.9) !important;
+}

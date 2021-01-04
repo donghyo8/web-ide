@@ -1,0 +1,35 @@
+[미팅 내용]
+- 문제점 및 범위, 목표
+- 새로운 기술을 적용해보는건 좋으나 논리구조가 명확해야함(하고자 하는 범위 및 내용 명확)
+- 기존의 문제점-> 기존 방법론, 기술, 알고리즘 등을 어떻게 해결하는지? -> 나의 방법론과 기존에 어떤차이가 있는지?
+
+
+[현상황에서의 문제점]
+- 기존 블록체인 시스템의 경우, 블록 용량(데이터 저장)의 한계때문에 이미지 및 동영상 등의 데이터들을 블록에 담을 수 없음
+- 또한, 블록 생성 후 노드들에게 배포(공유)하는 작업은 구성된 블록체인 네트워크의 노드가 많아질수록/데이터의 크기가 커질수록 많은 시간이 필요함(처리속도 저하 등의 문제를 감안하여 블록체인 프레임워크는 블록의 용량을 크게잡지 않음) 
+ 
+
+IPFS(Inter Plantery File System)
+
+ - 데이터의 내용을 기반으로 해쉬값 부여(동일한 내용의 데이터는 동일한 해쉬값을 가짐)
+ - 
+
+
+ 
+
+
+
+
+
+
+
+[Reference]
+
+블록체인 및 IPFS: https://steemit.com/ipfs/@energist/ipfs-inter-planetary-file-system
+IPFS 프로토콜 개발: https://steemit.com/kr/@evasioner/part-5-ipfs
+
+IPFS doc.: https://docs.ipfs.io/
+Js IPFS doc.https://js.ipfs.io/ko-KR/
+go-IPFS: https://github.com/ipfs/go-ipfs-api
+chaincode-samples(IPFS): https://gist.github.com/BCEvanFang/037eb209fcce46c53090124a92de6af3
+package shell(IPFS): https://godoc.org/github.com/ipfs/go-ipfs-api#Shell

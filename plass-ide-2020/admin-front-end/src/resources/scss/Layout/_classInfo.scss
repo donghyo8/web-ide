@@ -1,0 +1,47 @@
+.class__info{
+    .row{
+        font-size: 3.5rem;
+        text-align: center;
+        padding: 1rem 5rem 0rem 5rem;
+        background-image:linear-gradient(to right bottom, rgba($color-brown, .5), rgba($color-pink, .5)), url('https://eclass.dongguk.edu/lmsdata/img/classroom/design_templet/visual_img_large01.jpg');
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        h1{
+            letter-spacing: 2px;
+            text-shadow: white 2px 2px 0px, /* right down */
+             white -2px 2px 0px, /* left down */ 
+             white -2px -2px 0px, /* right up */ 
+             white 2px -2px 0px, /* left up */ /** next 4 shadows improve rendering */ 
+             white 2px 0px 0px, /* right */ white -2px 0px 0px, /* left */ 
+             white 0px 2px 0px, /* down */ white 0px -2px 0px, /* up */ /** lets add some blurred shadow to make it look a little nicer */ 
+            black 3px 3px 7px;
+            text-overflow: ellipsis;
+        }
+    }
+    &-details{
+        width: 50rem;
+        float: right;
+        background-color: rgba(#ccc, 0.8);
+        position: relative;
+        font-size: 1.2rem;    
+        left: 35px;
+        padding: 5px;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        color: black;
+        border-radius: 2rem;
+        .table{
+            border-color: rgba(black, 0.5);
+            th{
+                background-color: rgb(114, 109, 109);
+                color: white;
+            }
+        }
+    }
+    &-name{
+        h1{
+            font-size: 5rem;
+        }
+    }
+}

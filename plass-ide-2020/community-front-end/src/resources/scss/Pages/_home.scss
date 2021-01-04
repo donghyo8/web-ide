@@ -1,0 +1,32 @@
+.home{
+    position: relative;
+    a{
+        color: black;
+    }    
+    .home_bottom-box{
+        /*Home page -> Open Class*/
+        .mylist_class{
+            table td{
+                font-size: 1.7rem;
+                text-transform: capitalize;
+                padding: 6px;
+            }
+        }
+        margin-top:2rem;
+        .register_class{
+            ul{
+                width: 100%;
+            }
+            ul li{
+                display: inline;
+                padding-left: 2%;
+                select {
+                    height: 2.5rem;
+                }
+            }
+            .btn{
+                margin: 0.2rem;
+            }
+        }
+    }
+}

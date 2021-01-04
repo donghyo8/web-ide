@@ -1,0 +1,23 @@
+.search_box{
+    &-text{
+        font-size: 1.5rem;
+        margin-left: 5px;
+        margin-top: 2px;
+        padding: 8px;
+        height: 3rem;
+        background-color: rgb(226, 220, 220);
+        outline: none;
+        border: 1px solid $color-dark;
+        padding-right: 20px;
+    }
+    &-btn{
+        border: none;
+        font-size: 2.1rem;
+        outline: none;
+        svg{
+            right : 0.2rem;
+            top : -1.7rem;
+            position: absolute;
+        }
+    }
+}

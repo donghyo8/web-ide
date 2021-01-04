@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+html{
+    font-size: 50%;
+}
+body{
+    box-sizing: border-box;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+legend{
+    padding-left: 0.5rem;;
+    font-weight: bold;
+}
+
+html {
+    height: 100%;
+}
+body{
+    height: 100%;
+    min-height: 100%;
+}
+
+#root {
+    min-height: 100%;
+}
+button{
+    outline: none;
+}

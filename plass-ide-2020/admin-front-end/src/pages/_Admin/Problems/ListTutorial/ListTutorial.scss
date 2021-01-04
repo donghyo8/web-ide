@@ -1,0 +1,29 @@
+.TUTORIALLIST{
+    // padding: 2rem 0;
+    padding: 2rem 0;
+    margin: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .tutorial{
+        background-color: #e2e2e2;
+        margin: 1rem 1rem;
+        cursor: pointer;
+        img{
+            border: 1px solid #cccccc;
+            width: 100%;
+            display: block;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+        .tutorial-info{
+            padding: 1rem 0.5rem;
+            text-align: center;
+            span{
+                color: #695b50;
+                margin: 0.5rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

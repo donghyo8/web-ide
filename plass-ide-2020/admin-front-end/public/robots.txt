@@ -1,0 +1,16 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear:both;
+    }
+}
+.row{
+    @include clearfix;
+}
+
+ &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }

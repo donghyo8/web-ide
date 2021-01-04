@@ -1,0 +1,42 @@
+$color-dark:#2c3e50;
+$color-brown: #695b50;
+$color-orange: #d35400;
+$color-pink: #E9DEDE;
+
+:root{
+    --dark: #2c3e50;
+    --pink: #E9DEDE;
+    --orange: #d35400;
+    --brown: #695b50;
+    --white: #ffffff;
+}
+*,
+*::before,
+*::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+html{
+    font-size: 50%;
+    height: 100%;
+}
+body{
+    box-sizing: border-box;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+body{
+    height: 100%;
+    min-height: 100%;
+}
+#root {
+    min-height: 100%;
+}
+
+legend{
+    padding-left: 0.5rem;;
+    font-weight: bold;
+}

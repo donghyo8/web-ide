@@ -1,0 +1,170 @@
+html, body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+* {
+  outline: none;
+}
+
+.fullsize {
+  position: fixed;
+  display: block;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 100;
+  background: rgba(0,0,0,0.25);
+  .modal-wrapper {
+      position: absolute;
+      left: 0; right: 0; margin: 100px auto;
+      box-sizing: border-box;
+      width: 500px;
+      background: white;
+      border-radius: 10px;
+      .modal-header {
+        text-align: center;
+        padding: 25px;
+        font-weight: 600;
+
+        .close {
+          cursor: pointer;
+          position: absolute;
+          right: 20px;
+          top: 15px;
+          font-size: 18px;
+        }
+      }
+      .modal-body {
+        padding: 0 20px;
+      }
+      .modal-footer {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 20px 10px;
+        button {
+          margin-left: 5px;
+          padding: 3px 15px;
+          border: 1px solid 0;
+          background: white;
+          box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.30);
+        }
+      }
+  }
+}
+.MODAL {
+  position: fixed;
+  left:0;right:0;bottom: 0;top:0; z-index: 50;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  > .modal-wrapper {
+      position: absolute;
+      left:0;right:0;
+      margin: 100px auto;
+      max-width: calc(100% - 100px);
+      max-height: calc(100% - 100px);
+      width: 500px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+
+      > .modal-header {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          position: relative;
+          height: 45px;
+          border-bottom: 1px solid #f0f0f0;
+          p {
+              font-size: 18px;
+              text-align: center;
+          }
+          .close {
+              cursor: pointer;
+              position: absolute;
+              right: 10px;
+              font-size: 25px;
+              width: 40px;
+              line-height: 40px;
+              text-align: center;
+              color: #707070;
+
+              &::selection {
+                  background: none;
+              }
+          }
+      }
+      > .modal-body {
+          padding: 10px;
+      }
+      > .modal-footer {
+          display: flex;
+          justify-content: flex-end;
+          padding: 10px;
+          border-top: 1px solid #f0f0f0;
+          button {
+              margin-left: 10px;
+          }
+      }
+  }
+}
+
+.save-modal {
+  .directory-structure {
+    overflow: auto;
+    max-height: 300px;
+    border: 1px solid #c0c0c0;
+    box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.30);
+    padding: 5px;
+    box-sizing: border-box;
+    p {
+      padding: 5px;
+      cursor: pointer;
+      &:hover {
+        background: #f0f0f0;
+      }
+      &.active {
+        background: #f0f0f0;
+      }
+    }
+  }
+  .input-form {
+    margin-top: 10px;
+    label {
+      display: block;
+      margin-bottom: 5px;
+
+    }
+    select,
+    input {
+      display: block;
+      width: 100%;
+      height: 30px;
+      padding: 5px;
+      border: 1px solid #c0c0c0;
+      box-sizing: border-box;
+      box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.30);
+    }
+  }
+}
+
+.REPORT_MODAL {
+  ul {
+    margin-top: 10px;
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #eaeaea;
+    li {
+      cursor: pointer;
+      padding: 8px;
+      border-bottom: 1px solid #eaeaea;
+      &.active {
+        background: #dadada;
+      }
+      .limit {
+        font-size: 0.70rem;
+      }
+    }
+  }
+}

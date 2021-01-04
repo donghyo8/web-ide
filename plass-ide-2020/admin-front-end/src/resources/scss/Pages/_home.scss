@@ -1,0 +1,46 @@
+.home{
+    position: relative;
+    a{
+        color: black;
+    }    
+    .home_bottom-box{
+        margin-top:2rem;
+        .mylist_class{
+            table td{
+                font-size: 1.7rem;
+                text-transform: capitalize;
+                padding: 6px;
+            }
+        }
+        .create_class-tbl{
+            width: 100%;
+            th {
+                font-size: 3rem;
+                border-bottom: 2px solid black;
+                padding-bottom: 2rem;
+                position: relative;
+                button{
+                    position: absolute;
+                    right: 0px;
+                }                
+            }
+            td{
+                padding-top: 2rem;
+                text-align: center;
+            }
+            select {
+                width: 43.6%;
+            }
+            input{
+                border: none;
+                outline: none;
+                border-bottom: 1px solid black;
+                padding: 0.3rem;
+            }
+            input, select{
+                margin-left: 0.5rem;
+                width: 43.6%;
+            }
+        }
+    }
+}
