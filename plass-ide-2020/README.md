@@ -1,5 +1,3 @@
-# WEB IDE 기반 PLMS Repository
-
 
 ## 1. 목차
 * API Server
