@@ -11,7 +11,7 @@
 
 ## 설치 및 실행 방법
  
-    git clone https://github.com/donghyo8/web_ide_2020
+    git clone https://github.com/donghyo8/web-ide
     cd web-ide-front
     npm install
     npm start
